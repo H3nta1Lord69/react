@@ -11,12 +11,12 @@ import heroes, { owners } from "../data/heroes";
 //   });
 // };
 
-const getHeroById = (id) => heroes.find((heroe) => heroe.id === id);
+export const getHeroById = (id) => heroes.find((heroe) => heroe.id === id);
 
-console.log(getHeroById(2));
+// console.log(getHeroById(2));
 
-const getHeroByOwner = (owner) =>
+export const getHeroByOwner = (owner) =>
   heroes.filter((heroe) => heroe.owner.toLowerCase() === owner.toLowerCase());
 
-console.log(getHeroByOwner("mArVel"));
-console.log(owners);
+// console.log(getHeroByOwner("mArVel"));
+// console.log(owners);
