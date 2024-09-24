@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const FirstApp = ({ title, subtitle }) => {
+export const FirstApp = ({ title, subTitle }) => {
   // console.lo g(props);
 
   // if (!title) {
@@ -11,13 +11,20 @@ export const FirstApp = ({ title, subtitle }) => {
     <>
       <h1>{title}</h1>
       {/* <code>{JSON.stringify(newMessageAnything)}</code> */}
-      <p>{subtitle}</p>
+      <p>{subTitle}</p>
     </>
   );
 };
 
+// Usually this goes at the end of the file always
+
 FirstApp.propTypes = {
   // Mandatory prop type
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.number,
+  subTitle: PropTypes.number,
+};
+
+// This executes first
+FirstApp.defaultProps = {
+  title: "There's no title",
 };
