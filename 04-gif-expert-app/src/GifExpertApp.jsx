@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 
 export const GifExpertApp = () => {
   // Isn't recommendable to condition a hook
@@ -16,7 +17,7 @@ export const GifExpertApp = () => {
       {/* Title */}
       <h1>GifExpertApp</h1>
       {/* Input */}
-
+      <AddCategory />
       {/* Gif list */}
       <button onClick={onAddCategory}>Add Category</button>
       <ol>
