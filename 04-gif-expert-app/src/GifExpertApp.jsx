@@ -17,9 +17,8 @@ export const GifExpertApp = () => {
       {/* Title */}
       <h1>GifExpertApp</h1>
       {/* Input */}
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
       {/* Gif list */}
-      <button onClick={onAddCategory}>Add Category</button>
       <ol>
         {categories.map((category) => {
           return <li key={category}>{category}</li>;
