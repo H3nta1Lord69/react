@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const GifExpertApp = () => {
+  // Isn't recommendable to condition a hook
+
+  const [categories, setCategories] = useState(["One Piece", "Pokémon"]);
+
   return (
     <>
       {/* Title */}
@@ -8,6 +12,12 @@ export const GifExpertApp = () => {
       {/* Input */}
 
       {/* Gif list */}
+      <ol>
+        {categories.map((category) => {
+          return <li key={category}>{category}</li>;
+        })}
+        {/* <li></li> */}
+      </ol>
       {/* gifItem */}
     </>
   );
