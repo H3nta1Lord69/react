@@ -1,8 +1,13 @@
 import PropTypes from "prop-types";
 import { getGif } from "../helpers/getGif";
+import { useEffect } from "react";
 
 export const GifGrid = ({ category }) => {
-  getGif(category);
+  // Trigger an effect in any desired condition
+  useEffect(() => {
+    getGif(category);
+    // [] means it will trigger a single time
+  }, []);
 
   return (
     <>
