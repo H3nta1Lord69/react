@@ -31,7 +31,7 @@ export const GifGrid = ({ category }) => {
   );
 };
 
-// GifGrid PropTypes
+// GifGrid PropTypes -- anything
 GifGrid.propTypes = {
   category: PropTypes.string,
 };
