@@ -1,22 +1,10 @@
 import PropTypes from "prop-types";
-import { getGif } from "../helpers/getGif";
-import { useEffect, useState } from "react";
 import { GifGridItem } from "./GifGridItem";
+import { useFetchGif } from "../hooks/useFetchGif";
 
 export const GifGrid = ({ category }) => {
-  const [images, setImages] = useState([]);
-
-  const getImages = async () => {
-    const newImage = await getGif(category);
-    setImages(newImage);
-  };
-
-  // Trigger an effect in any desired condition
-  useEffect(() => {
-    getImages();
-    // [] means it will trigger a single time
-  }, []);
-
+  const { images, isLoading } = useFetchGif(category);
+  console.log(isLoading);
   return (
     <>
       <h3>{category}</h3>
