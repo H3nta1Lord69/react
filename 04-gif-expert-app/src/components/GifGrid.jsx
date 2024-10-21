@@ -4,10 +4,13 @@ import { useFetchGif } from "../hooks/useFetchGif";
 
 export const GifGrid = ({ category }) => {
   const { images, isLoading } = useFetchGif(category);
-  console.log(isLoading);
+
   return (
     <>
       <h3>{category}</h3>
+      {/* <LoadingMessage isLoading={isLoading} /> */}
+      {/* {isLoading ? <h2>Loading...</h2> : null} */}
+      {isLoading && <h2>Loading...</h2>}
 
       <div>
         {images.map((image) => (
