@@ -5,6 +5,6 @@ describe("Tests on GifGridItem", () => {
   const url = "https://www.google.com";
   test("should match with snapshot", () => {
     const {container} = render(<GifGridItem title={title} url={url} />);
-    expect(container).toMatchSnapshot();
+    expect(container).toMatchSnapshot(); 
   });
 });
