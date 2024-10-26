@@ -1,5 +1,6 @@
 import { GifGridItem } from "../../src/components/GifGridItem";
 
+// GifGridTest
 describe("Tests on GifGridItem", () => {
   const title = "One Piece";
   const url = "https://www.google.com";
