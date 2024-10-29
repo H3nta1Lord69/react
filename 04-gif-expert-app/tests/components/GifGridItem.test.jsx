@@ -20,3 +20,8 @@ test("should present the image with the URL and ALT", () => {
   expect(src).toBe(url);
   expect(alt).toBe(title);
 });
+
+test("should show the title of the image", () => {
+  render(<GifGridItem title={title} url={url} />);
+  expect(screen.getByText(title)).toBeTruthy();
+});
