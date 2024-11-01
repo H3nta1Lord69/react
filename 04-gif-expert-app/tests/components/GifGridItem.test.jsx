@@ -14,7 +14,7 @@ test("should present the image with the URL and ALT", () => {
   render(<GifGridItem title={title} url={url} />);
   // screen.debug();
   // expect(screen.getByRole("img").src).toBe(url);
-  // expect(screen.getByRole("img").alt).toBe(title);
+  // expect(screen.getByRole("img").alt).toBe(title); anything
 
   const { src, alt } = screen.getByRole("img");
   expect(src).toBe(url);
