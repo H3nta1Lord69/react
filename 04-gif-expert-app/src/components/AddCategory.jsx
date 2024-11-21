@@ -13,6 +13,7 @@ export const AddCategory = ({ onNewCategory }) => {
     if (inputValue.trim().length <= 1) return;
 
     // setCategories((categories) => [inputValue, ...categories]);
+    // I'll be back, I swear
     onNewCategory(inputValue.trim());
     setInputValue("");
   };
