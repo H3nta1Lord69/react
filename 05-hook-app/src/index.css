@@ -1,0 +1,12 @@
+* {
+  color: white;
+}
+
+body {
+  padding: 20px;
+  background-color: black;
+}
+
+button {
+  margin-right: 10px;
+}
